@@ -9,7 +9,22 @@ set(CMAKE_AUTOMOC ON)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 qt_add_executable(cookie_clicker
+    src/AnimationEffects.cpp
+    src/AnimationEffects.h
+    src/CookieButton.cpp
+    src/CookieButton.h
+    src/CookieClickerWindow.cpp
+    src/CookieClickerWindow.h
+    src/CookieGame.cpp
+    src/CookieGame.h
     src/main.cpp
+    src/NumberFormatter.cpp
+    src/NumberFormatter.h
+    src/Upgrade.h
+    src/UpgradeCard.cpp
+    src/UpgradeCard.h
+    src/UpgradeCatalog.cpp
+    src/UpgradeCatalog.h
 )
 
 target_link_libraries(cookie_clicker PRIVATE Qt6::Widgets)

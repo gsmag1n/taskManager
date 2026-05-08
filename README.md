@@ -11,6 +11,14 @@ passive baking, and purchasable upgrades.
 - Floating feedback text and upgrade pulse animations
 - Warm bakery-themed Qt Widgets styling
 
+## Architecture
+
+- `CookieGame` owns gameplay state, resource generation, and upgrade purchases.
+- `UpgradeCatalog` defines the default upgrade data separately from runtime state.
+- `CookieClickerWindow` builds the screen and connects UI events to the game model.
+- `CookieButton` and `UpgradeCard` are focused Qt widgets for reusable presentation.
+- `AnimationEffects` and `NumberFormatter` keep UI effects and display formatting out of the game logic.
+
 ## Build
 
 Install Qt6 development packages and CMake, then run:
