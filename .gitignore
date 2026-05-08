@@ -1,0 +1,28 @@
+# Build artefacts
+/build/
+/build-*/
+/cmake-build-*/
+*.user
+*.user.*
+
+# IDE
+.vscode/
+.idea/
+.cache/
+compile_commands.json
+
+# Editor swap / OS files
+*.swp
+.DS_Store
+Thumbs.db
+
+# Compiled objects (top-level fallback)
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
