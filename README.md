@@ -16,7 +16,7 @@ passive baking, and purchasable upgrades.
 Install Qt6 development packages and CMake, then run:
 
 ```sh
-cmake -S . -B build
+CXX=g++ cmake -S . -B build
 cmake --build build
 ```
 
